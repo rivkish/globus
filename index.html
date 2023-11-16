@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globus</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script defer type="module" src="js/app.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Rubik+Moonrocks&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-info">
+    <header>
+    <nav class="navbar navbar-expand bg-black">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="text-white" aria-current="page" href="index.html">
+                        <i class="fa fa-globe" aria-hidden="true" style="font-size: 50px;"></i>
+                    </a>
+                    <div id="nav_open" class="me-auto mb-2 mb-lg-0 d-lg-block nav1">
+                        <ul class="nav text-center">
+                            <li><a class="a" href="#">USA</a></li>
+                            <li><a class="a" href="#">ISRAEL</a></li>
+                            <li><a class="a" href="#">FRANCE</a></li>
+                            <li><a class="a" href="#">UK</a></li>
+                            <li><a class="a" href="#">THAILAND</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-2 d-lg-block">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Choose country</option>
+                        </select>
+                    </div>
+                    <form class="d-flex d-lg-flex" role="search" id="form-search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="id_search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                    <div class="burger col-1 display-6 d-lg-none text-end">
+                        <i id="burger_btn" class="fa fa-bars text-white" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div style="height: 80px;"></div>
+
+    <main class="container" style="min-height: 580px;">
+        <div id="spinner" class="w-100 text-center">
+            <img src="css/Spinner.gif" alt="">
+        </div>
+        <div id="id_parent" class="row justify-content-around">
+            
+        </div>
+    </main>
+
+    <footer class="container-fluid bg-dark d-flex justify-content-center align-items-center" style="height: 80px;">
+        <p class="text-white">© Rivka Shabtai | 2023</p>
+    </footer>
+
+
+    <script>
+        (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyAhO2OE32RnIRtgfzt1gfqBaanubfW2fGk", v: "weekly" });
+    </script>
+    <script src="./js/burger.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
+
+
+<!-- navbar-nav -->

@@ -1,0 +1,102 @@
+body{
+    background-image: url("Earth.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+ #map {
+    height: 400px;
+    width: 100%;
+  }
+  header{
+
+  position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+ul{
+  width:440px ;
+}
+ .a{
+    color: white;
+    cursor: pointer;
+    padding: 0 16px;
+    text-decoration: none;
+  }
+  .a:hover{
+    color: antiquewhite;
+  }
+
+   li::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width:0%;
+    background: white;
+    transition: 1000ms;
+    margin:0 auto;
+  }
+   li:hover::after{
+    width:100%;
+  }
+   li::before{
+    content: "";
+    display: block;
+    height:1px;
+    width:0%;
+    background: white;
+    transition: 1000ms;
+    margin:0 auto;
+  }
+   li:hover::before{
+    width:100%;
+  }
+.countryCard{
+  background: rgba(206, 206, 206, 0.784);
+}
+
+.box{
+  width: 50%;
+}
+.box1{
+  width: 50%;
+}
+
+
+
+  @media (max-width:992px){
+      .nav1 {
+      display: none;
+      position: absolute;
+      z-index: 99;
+      width:30%;
+      right:0;
+      top:60px;
+    }
+  
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      right:0;
+      background: rgba(0, 0, 0, 0.59); 
+      width: 100%; 
+    }
+  
+    nav li{
+      padding:8px;
+      width:100%;
+    }
+
+    .box{
+      width: 100%;
+      order: 1;
+    }
+    .box1{
+      width: 100%;
+      order: 0;
+    }
+    
+  }
+
+ 
