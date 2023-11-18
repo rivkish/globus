@@ -3,6 +3,7 @@ import {createArrCountries,start} from "./functions.js"
 import {declareEvents} from "./bodyEvents.js"
 
 const init=()=>{
+  document.getElementById("forTheSite").style.display="none"
     doApi()
 }
 
