@@ -10,12 +10,12 @@ export default class CountryCardClass {
       myDiv.className = "d-flex col-md-6 col-lg-4 justify-content-center my-3 text-center";
       document.querySelector(this.parent).append(myDiv);
       myDiv.innerHTML += `
-      <div class="card h-100"  data-aos="zoom-in-up" data-aos-duration="1000" style="width:400px;cursor: pointer;">
-      <img src="${this.flag}" class="card-img-top  shadow" width="100%" alt="${this.name}" style="height:250px">
-      <div class="card-body" >
-      <p class=" card-text Mcard-text m-0 p-3">Name: ${this.name} </p>
-      </div>
-      </div>
+      <div class="card h-100 bg-black border border-white" data-aos="zoom-in-up" data-aos-duration="1000" style="width:400px;cursor: pointer;">
+            <div class="card-body">
+                <p class="card-text text-center text-white cardText">${this.name}</p>
+            </div>
+            <img src="${this.flag}" class="card-img-bottom  " width="100%" alt="${this.name}" style="height:250px">
+        </div>
       `;
       myDiv.querySelector(".card").addEventListener("click", () => {
         document.querySelector("#id_parent").innerHTML = "";
